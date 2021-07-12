@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+table.table-fit {
+  width: 100% !important;
+  table-layout: auto !important;
+}
+table.table-fit thead th, table.table-fit tfoot th {
+  width: auto !important;
+}
+table.table-fit tbody td, table.table-fit tfoot td {
+  width: auto !important;
+}
