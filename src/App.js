@@ -6,7 +6,9 @@ import LoginControl from "./components/LoginControl.js"
 import Home from "./components/Home"
 import Categorias from "./components/Categorias.js"
 //NOVO
-import Usuarios from "./components/Usuarios.js"
+import Usuarios from "./components/Usuarios";
+import NovoUsuario from "./components/NovoUsuario";
+import EditaUsuario from "./components/EditaUsuario";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -42,7 +44,9 @@ function App() {
       <div className="container mt-3 px-0">
         <Switch>
           <Route path="/categorias" component={Categorias} />
-          <Route path="/usuarios" component={Usuarios} />
+          <Route exact path={["/usuarios"]} component={Usuarios} />
+          <Route exact path="/novoUsuario" component={NovoUsuario} />
+          <Route exact path="/editaUsuario/:id" component={EditaUsuario} />
           <Route path="/" component={Home} />
         </Switch>
       </div>
